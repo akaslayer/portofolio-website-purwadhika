@@ -1,0 +1,49 @@
+.container--website {
+  background-color: #c7d0d9;
+  padding: 56px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container--website-button {
+  position: absolute;
+  align-items: center;
+  display: none;
+  color: #0b0c0e;
+  transition: 3s all;
+}
+
+.container--website:hover .container--website-button {
+  display: block;
+}
+
+.container--website-button button {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19.2px;
+  text-align: left;
+  font-family: 'PP Neue Montreal', sans-serif;
+  padding: 12px 18px;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #0b0c0e;
+  transition: all 0.5s;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.container--website-button button:hover {
+  background-color: #0b0c0e;
+
+  color: #fff;
+}
+
+.container--website-button i {
+  font-size: 19px;
+}

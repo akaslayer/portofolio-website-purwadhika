@@ -1,0 +1,22 @@
+.testimonial--col {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.testimonial--container {
+  background-color: white;
+  padding: 162px 92px;
+}
+
+.testimonial--item {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.testimonial--item h3 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  font-family: 'PP Neue Montreal', sans-serif;
+}

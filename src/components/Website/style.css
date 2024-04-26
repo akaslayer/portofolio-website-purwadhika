@@ -1,0 +1,29 @@
+.website--item {
+  display: flex;
+  margin-left: 80px;
+  overflow-x: scroll;
+  margin-bottom: 30px;
+}
+
+.website--item--2 {
+  display: flex;
+  margin-right: 40px;
+  flex-direction: row-reverse;
+  overflow-x: scroll;
+}
+
+.website--grid {
+  gap: 20px;
+}
+
+.website--item::-webkit-scrollbar {
+  display: none;
+}
+
+.website--item--2::-webkit-scrollbar {
+  display: none;
+}
+
+.website--container {
+  background-color: white;
+}

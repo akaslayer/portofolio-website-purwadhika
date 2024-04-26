@@ -1,0 +1,31 @@
+.footer2--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  justify-content: space-between;
+}
+
+.footer2--container {
+  background-color: #0b0c0e;
+  padding: 100px 60px 20px 60px;
+  align-items: center;
+}
+
+.footer2--item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer2--item nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer2--item nav ul {
+  display: flex;
+}
+
+.footer2--item nav li {
+  color: white;
+}

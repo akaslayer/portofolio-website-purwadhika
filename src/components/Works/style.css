@@ -1,0 +1,30 @@
+.grid--col--work {
+  background-color: white;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid--col--work .grid--item {
+  padding: 160px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 66px;
+}
+
+.grid--item h3 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+}
+
+.grid--item p {
+  color: #0b0c0e;
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 37.8px;
+  text-align: left;
+}
