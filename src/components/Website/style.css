@@ -1,19 +1,29 @@
 .website--item {
   display: flex;
-  padding-left: 20px;
-  overflow-x: scroll;
   margin-bottom: 30px;
+  animation: scroll-right 20s linear infinite;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.website--item:hover {
+  animation-play-state: paused;
+}
+
+.website--item--2:hover {
+  animation-play-state: paused;
 }
 
 .website--item--2 {
   display: flex;
   flex-direction: row-reverse;
-  overflow-x: scroll;
   padding-left: 20px;
+  animation: scroll-left 20s linear infinite;
 }
 
 .website--grid {
-  gap: 20px;
+  display: flex;
+  width: calc(250px * 18);
 }
 
 .website--item::-webkit-scrollbar {
@@ -26,4 +36,44 @@
 
 .website--container {
   background-color: white;
+
+  overflow: hidden;
+}
+
+.website--grid:before,
+.website--container:after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    0%,
+    rgba(255, 255, 255, 0),
+    100%
+  );
+
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+}
+
+@keyframes scroll-right {
+  0% {
+    right: 100%;
+    transform: translateX(-100%);
+  }
+  100% {
+    right: -100%;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    right: -100%;
+    transform: translateX(100%);
+  }
+  100% {
+    left: 100%;
+    transform: translateX(0);
+  }
 }

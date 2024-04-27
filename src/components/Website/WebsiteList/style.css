@@ -6,6 +6,30 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  perspective: 100px;
+  overflow: hidden;
+}
+
+.container--website:hover img {
+  transform: translateZ(20px);
+  transform: scale(1.1);
+  transition: 1s all;
+}
+
+.container--website::before,
+.container--website::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    0%,
+    rgba(255, 255, 255, 0),
+    100%
+  );
+
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
 }
 
 .container--website-button {

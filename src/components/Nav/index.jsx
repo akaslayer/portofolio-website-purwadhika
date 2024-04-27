@@ -1,15 +1,15 @@
 import React from 'react'
 import './style.css'
 import { Link } from 'react-router-dom'
-import Contact from '../../routes/Contact'
+// import Contact from '../../routes/Contact'
 import { HashLink } from 'react-router-hash-link'
 
 const Nav = () => {
   return (
     <>
-      <div className='header'>
+      <div id='header' className='header'>
         <nav>
-          <h3>@Ayush Barnwal</h3>
+          <h3>@Hendry Tjahaja Surijanto Putra</h3>
           <ul>
             <li>
               <HashLink to='/#about'>About</HashLink>

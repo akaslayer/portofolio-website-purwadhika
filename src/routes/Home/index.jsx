@@ -7,17 +7,24 @@ import Works from '../../components/Works'
 import Website from '../../components/Website'
 import Testimonial from '../../components/Testimonials'
 import Footer from '../../components/Footer'
+import HambergerMenu from '../../components/HambergerMenu'
+import SideMenu from '../../components/SideMenu'
+import StateProvider from '../../components/StateContext'
 
 const Home = () => {
   return (
     <>
-      <Nav />
-      <Hero />
-      <About />
-      <Works />
-      <Website />
-      <Testimonial />
-      <Footer />
+      <StateProvider>
+        <SideMenu />
+        <HambergerMenu />
+        <Nav />
+        <Hero />
+        <About />
+        <Works />
+        <Website />
+        <Testimonial />
+        <Footer />
+      </StateProvider>
     </>
   )
 }

@@ -7,6 +7,10 @@ nav {
   padding: 20px 80px;
 }
 
+.scroll-nav {
+  display: none;
+}
+
 .header {
   display: flex;
   background-color: transparent;
@@ -55,4 +59,8 @@ nav h3 {
   font-weight: 400;
   line-height: 28.8px;
   text-align: left;
+}
+
+.hidden {
+  display: none;
 }
